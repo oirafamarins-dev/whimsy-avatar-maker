@@ -4,14 +4,13 @@ import Image from "next/image"
 import { useState } from "react"
 import { cn } from "@/lib/utils"
 
-const LOGO_SRC = "/logo/whimsy-logo.png"
 
-interface WhimsyLogoProps {
+interface WhimsyProps {
   className?: string
   height?: number
 }
 
-export function WhimsyLogo({ className, height = 32 }: WhimsyLogoProps) {
+export function Whimsy({ className, height = 32 }: WhimsyProps) {
   const [failed, setFailed] = useState(false)
 
   if (failed) {
@@ -30,7 +29,9 @@ export function WhimsyLogo({ className, height = 32 }: WhimsyLogoProps) {
 
   return (
     <Image
-      src={LOGO_SRC}
+      src=<div className="text-2xl font-semibold tracking-[0.3em]">
+      WHIMSY
+    </div>
       alt="WHIMSY"
       width={height * 4}
       height={height}
