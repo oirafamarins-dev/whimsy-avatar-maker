@@ -206,9 +206,7 @@
     },
     "accessories": [
   "/accessories/accessory-01.png",
-  "/accessories/accessory-02.png",
-  "/accessories/accessory-03.png",
-  "/accessories/accessory-04.png"
+  "/accessories/accessory-02.png"
 ]
   }
 }
